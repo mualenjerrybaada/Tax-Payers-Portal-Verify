@@ -25,7 +25,7 @@ export default function HomePage() {
             {/* GRA Header */}
             <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3">
               <Image
-                src="/assets/images/gra-logo.png"
+                src="/gra-logo.png"
                 alt="GRA Ghana Revenue Authority Logo"
                 width={44}
                 height={44}
