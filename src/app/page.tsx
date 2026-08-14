@@ -24,41 +24,51 @@ export default function HomePage() {
             {/* GRA Header */}
             <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3">
               <svg
-                className="h-10 w-10 flex-shrink-0"
-                viewBox="0 0 120 120"
+                className="h-11 w-11 flex-shrink-0"
+                viewBox="0 0 140 140"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Outer Yellow Ring */}
-                <circle cx="60" cy="60" r="58" fill="#FFC600" stroke="#333" strokeWidth="1" />
+                {/* Outer Yellow Circle */}
+                <circle cx="70" cy="70" r="68" fill="#FFCC00" stroke="#333" strokeWidth="1.5" />
                 
-                {/* Inner Circle Border */}
-                <circle cx="60" cy="60" r="56" fill="none" stroke="#333" strokeWidth="0.5" />
+                {/* Yellow border decoration */}
+                <circle cx="70" cy="70" r="63" fill="none" stroke="#333" strokeWidth="0.8" />
                 
-                {/* Center Blue Circle */}
-                <circle cx="60" cy="60" r="42" fill="#1E5BA8" />
+                {/* Inner Blue Circle */}
+                <circle cx="70" cy="70" r="50" fill="#0066CC" />
                 
-                {/* Sky/UFO design in center */}
-                <ellipse cx="60" cy="48" rx="16" ry="12" fill="#87CEEB" stroke="#fff" strokeWidth="0.5" />
+                {/* Sky/Cloud element at top */}
+                <path d="M 55 45 Q 45 35 60 30 Q 75 35 65 45" fill="#87CEEB" stroke="#fff" strokeWidth="1" />
                 
-                {/* Wings/Aircraft elements */}
-                <path d="M 40 48 Q 30 45 25 50 Q 30 52 40 50" fill="#FFD700" stroke="#fff" strokeWidth="0.5" />
-                <path d="M 80 48 Q 90 45 95 50 Q 90 52 80 50" fill="#FFD700" stroke="#fff" strokeWidth="0.5" />
+                {/* UFO/Dome shape */}
+                <ellipse cx="70" cy="50" rx="20" ry="15" fill="#87CEEB" stroke="#fff" strokeWidth="1" />
+                <ellipse cx="70" cy="50" rx="18" ry="13" fill="#6BB6D6" />
                 
-                {/* White dots decoration */}
-                <circle cx="60" cy="68" r="1.5" fill="#fff" />
-                <circle cx="45" cy="65" r="1" fill="#fff" />
-                <circle cx="75" cy="65" r="1" fill="#fff" />
+                {/* Eagle/Wings - Left */}
+                <path d="M 50 55 Q 30 50 25 65 Q 30 70 50 65" fill="#FFD700" stroke="#333" strokeWidth="0.8" />
+                
+                {/* Eagle/Wings - Right */}
+                <path d="M 90 55 Q 110 50 115 65 Q 110 70 90 65" fill="#FFD700" stroke="#333" strokeWidth="0.8" />
+                
+                {/* Center body of eagle */}
+                <circle cx="70" cy="62" r="6" fill="#FFD700" stroke="#333" strokeWidth="0.8" />
+                
+                {/* Decorative dots */}
+                <circle cx="55" cy="75" r="1.5" fill="#fff" />
+                <circle cx="70" cy="78" r="1.5" fill="#fff" />
+                <circle cx="85" cy="75" r="1.5" fill="#fff" />
                 
                 {/* Star at bottom */}
-                <polygon points="60,80 63,87 70,87 65,92 67,99 60,95 53,99 55,92 50,87 57,87" fill="#FFD700" stroke="#333" strokeWidth="0.5" />
+                <g fill="#FFD700" stroke="#333" strokeWidth="0.8">
+                  <polygon points="70,95 75,108 89,108 78,116 83,129 70,121 57,129 62,116 51,108 65,108" />
+                </g>
                 
-                {/* Text around border - GHANA REVENUE AUTHORITY */}
+                {/* Text around top - GHANA REVENUE AUTHORITY */}
                 <defs>
-                  <path id="circlePath" d="M 20, 60 A 40, 40 0 0, 1 100, 60" fill="none" />
-                  <path id="circlePathBottom" d="M 100, 60 A 40, 40 0 0, 1 20, 60" fill="none" />
+                  <path id="topCurve" d="M 25,70 A 45,45 0 0,1 115,70" fill="none" />
                 </defs>
-                <text fontSize="6" fontWeight="bold" fill="#333" fontFamily="Arial">
-                  <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
+                <text fontSize="8" fontWeight="bold" fill="#333" fontFamily="Arial, sans-serif" letterSpacing="2">
+                  <textPath href="#topCurve" startOffset="50%" textAnchor="middle">
                     GHANA REVENUE AUTHORITY
                   </textPath>
                 </text>
