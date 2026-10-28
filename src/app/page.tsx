@@ -9,11 +9,11 @@ export default function HomePage() {
     issuer: "GRA DOCUMENT CHECKER",
     documentType: "Tax Clearance Certificate",
     documentId: "TTAM226001154",
-    issuedOn: "Sep 29 2026",
+    issuedOn: "Oct 29 2026",
     issuedTo: "LOGISTICS SUPPORT SERVICES LTD",
     tin: "C0001096370",
     purpose: "To apply for award of contracts",
-    validUntil: "Oct 28 2026",
+    validUntil: "Nov 28 2026",
     taxOffice: "TAMALE WEST TSC",
   };
 
